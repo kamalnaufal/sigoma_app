@@ -15,7 +15,7 @@
         "APP_DEBUG": "false",
         "APP_URL": "https://aplikasi-sigoma.vercel.app",
 
-        "APP_KEY": "@app_key",
+        "APP_KEY": "base64:3lXY+0bT1J+71KeEDke5yl6Yj0qbsPWRDs2PJbNSwxI=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
