@@ -1,13 +1,11 @@
 {
     "version": 2,
-    "buildCommand": "vite build",
-    "outputDirectory": "public",
-   "builds": [
+    "builds": [
         {
             "src": "api/index.php",
             "use": "@vercel/php"
         }
-    ]
+    ],
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/$1" },
         { "src": "/(.*)", "dest": "/api/index.php" }
@@ -16,17 +14,17 @@
         "APP_NAME": "Laravel",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://aplikasi-sigomav02-git-main-kamals-projects-75481396.vercel.app",
+        "APP_URL": "https://nama-proyek-anda.vercel.app",
 
-        "APP_KEY": "base64:3lXY+0bT1J+71KeEDke5yl6Yj0qbsPWRDs2PJbNSwxI=",
-
+        "APP_KEY": "@app_key",
+        
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
+        
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "CACHE_DRIVER": "array",
@@ -37,6 +35,6 @@
         "DB_PORT": "6543",
         "DB_DATABASE": "postgres",
         "DB_USERNAME": "postgres.igrhtngrrglorgcsltop",
-        "DB_PASSWORD": "Widiaopay02."
+        "DB_PASSWORD": "@db_password"
     }
 }
