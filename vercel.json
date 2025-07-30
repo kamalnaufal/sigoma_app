@@ -1,40 +1,30 @@
 {
     "version": 2,
-    "builds": [
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
+    },
+    "routes": [
         {
-            "src": "api/index.php",
-            "use": "@vercel/php"
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ],
-    "routes": [
-        { "src": "/build/(.*)", "dest": "/public/build/$1" },
-        { "src": "/(.*)", "dest": "/api/index.php" }
-    ],
     "env": {
-        "APP_NAME": "Laravel",
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://sigoma-appvv22.vercel.app/",
-
-        "APP_KEY": "base64:3lXY+0bT1J+71KeEDke5yl6Yj0qbsPWRDs2PJbNSwxI=",
-        
+        "APP_ENV": "local",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://sigomafinish.vercel.app/",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-        
-        "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie",
         "CACHE_DRIVER": "array",
-        "QUEUE_CONNECTION": "sync",
-
-        "DB_CONNECTION": "pgsql",
-        "DB_HOST": "aws-0-ap-southeast-1.pooler.supabase.com",
-        "DB_PORT": "6543",
-        "DB_DATABASE": "postgres",
-        "DB_USERNAME": "postgres.igrhtngrrglorgcsltop",
-        "DB_PASSWORD": "Widiaopay02."
-    }
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "database"
+    },
+    "outputDirectory": "public"
 }
+
