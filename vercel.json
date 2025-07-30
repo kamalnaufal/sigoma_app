@@ -13,7 +13,7 @@
         "APP_NAME": "Laravel",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://nama-proyek-anda.vercel.app",
+        "APP_URL": "https://sigoma_app.vercel.app",
 
         "APP_KEY": "@app_key",
 
